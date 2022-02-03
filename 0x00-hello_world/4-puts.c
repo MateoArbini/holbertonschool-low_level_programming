@@ -1,6 +1,11 @@
 #include <studio.h>
-int main (void)
+/**
+ *main - yjtyyt
+ *Return: rr
+ *
+ */
+int main(void)
 {
-	print("Programming is like building a multilingual puzzle");
-		Return: (0);
+	puts("Programming is like building a multilingual puzzle");
+	Return:0;
 }
