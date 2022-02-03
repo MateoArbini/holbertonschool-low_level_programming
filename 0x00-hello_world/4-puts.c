@@ -1,4 +1,4 @@
-#include "studio.h"
+#include <studio.h>
 int main (void)
 {
 	print("Programming is like building a multilingual puzzle");
