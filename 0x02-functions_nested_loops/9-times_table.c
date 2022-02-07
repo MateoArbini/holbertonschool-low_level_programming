@@ -4,7 +4,7 @@
  *
  *
  **/
-void times_table(void);
+void times_table(void)
 {
 	int a;
 	int mult = 1, res = 0;
