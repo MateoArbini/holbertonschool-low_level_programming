@@ -11,7 +11,7 @@ void times_table(void)
 	int b;
 for (a = 48; a <= 57; a++)
 {
-for (b = 48, b <= 57; b++)
+for (b = 48; b <= 57; b++)
 {
 res = (a - 48) * (b - 48);
 sig = (a - 48) * ((b + 1) - 48);
