@@ -7,9 +7,9 @@
 
 int _abs(int n)
 {
-int n
-	if (n >= 0)
-		_patchar(n)
-	else (n < 0)
-		_patchar(-n)
+int n;
+if (n >= 0)
+_patchar(n)
+else (n < 0)
+_patchar(-n)
 }
