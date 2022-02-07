@@ -5,7 +5,7 @@
  *Return: 1 for upper and lower and 0 otherwise
  **/
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	if (isupper(C) || islower(c))
 		return (1);
