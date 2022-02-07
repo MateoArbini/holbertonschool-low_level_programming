@@ -6,8 +6,7 @@
  **/
 
 int _isalpha(int c)
-{
-	if (isupper(C) || islower(c))
+	if (isalpha(c))
 		return (1);
 	else
 		return (0);
