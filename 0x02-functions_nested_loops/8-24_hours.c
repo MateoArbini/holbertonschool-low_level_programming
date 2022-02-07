@@ -4,14 +4,14 @@
  *@i: mintos
  *@j: horas
  **/
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int i; 
 	int j;
 	{
-		for (i = 0; i <= 59; i++)
+		for (i = 0; i < 24; i++)
 		{
-			for (j = (i + 1); j <== 24, j++)
+			for (j = 0; j <= 59; j++)
 			{
 				_putchar((i / 10) + '0');
 				_putchar((i % 10) + '0');
@@ -20,14 +20,10 @@ void jack_bauer(void);
 				_putchar((j % 10) + '0');
 				if (i < 24)
 				{
-					_putchar(',');
-					_putchar(' ');
 					_putchar('\n');
-
 				}
 			}
 		}
 	}
-
 }
 
