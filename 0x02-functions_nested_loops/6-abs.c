@@ -5,8 +5,11 @@
  *
  **/
 
-int _abs(int);
+int _abs(int n)
 {
-	if x = abs (int)
-		return (int)
+int n
+	if (n >= 0)
+		_patchar(n)
+	else (n < 0)
+		_patchar(-n)
 }
