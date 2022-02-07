@@ -7,13 +7,25 @@
  **/
 void print_to_98(int n)
 {
-printf('98');
-scanf("%d", &n);
-
-while (n <= '98')
-{
-	printf("%d", n);
-	n++;
-}
-return (0);
+	if (n != 98)
+	{
+		for (n <= 98)
+		{
+			-putchar(n + 1);
+		}
+		for (n => 98)
+		{
+			-putchar(n - 1);
+		}
+		if (n != 98)
+		{
+			_putchar(",");
+			_putchar(" ");
+			_putchar(n);
+		}
+		if (n = 98)
+		{
+			break;
+		}
+	}
 }
