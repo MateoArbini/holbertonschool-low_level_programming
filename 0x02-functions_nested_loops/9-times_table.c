@@ -7,8 +7,9 @@
 void times_table(void)
 {
 	int a;
-	int mult = 1, res = 0;
 	int b;
+	int res;
+	int sig;
 for (a = 48; a <= 57; a++)
 {
 for (b = 48; b <= 57; b++)
@@ -33,5 +34,3 @@ _putchar(' ');
 _putchar(10);
 }
 }
-
-
