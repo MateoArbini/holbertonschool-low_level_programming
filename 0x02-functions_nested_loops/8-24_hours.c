@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *jack_bauer - horas
- *@i: mintos
- *@j: horas
+ *jack_bauer - muestra minutos y horas
+ *
  **/
 void jack_bauer(void)
 {
