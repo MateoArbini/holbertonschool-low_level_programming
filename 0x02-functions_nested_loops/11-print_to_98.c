@@ -7,14 +7,8 @@
  **/
 void print_to_98(int n)
 {
-printf("Enter value of n: ");
-scanf("%d", &n);
-
-while(n >= 1)
+if (n <= 98)
 {
-	printf("%d", n)
-		n++;
-}
-return (0);
+	printf("%d" + 1, n)
 }
 
