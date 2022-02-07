@@ -7,6 +7,6 @@
 
 int _abs(int);
 {
-	if (intabs(int))
-		_putchar(int)
+	if x = abs (int)
+		return (int)
 }
