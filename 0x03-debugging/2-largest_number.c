@@ -20,9 +20,9 @@ int largest_number(int a, int b, int c)
 	{
 		largest = b;
 	}
-	else (c > a && a > b)
+	else
 	{
 		largest = c;
 	}
-	printf("%d is the largest number", largest)
+	return (largest);
 }
