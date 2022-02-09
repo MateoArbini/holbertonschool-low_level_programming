@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *
- *
- *
+ *main - pone fizz en los multi de 3, buzz en 5 y ambos
+ *Return: 0
  **/
 int main(void)
 {
@@ -13,23 +12,22 @@ int main(void)
 		if (a % 3 == 0 && a % 5 == 0)
 		{
 			printf("FizzBuzz");
-			printf(" ");
 		}
 		else if (a % 5 == 0 && a % 3 != 0)
 		{
 			printf("Buzz");
-			printf(" ");
 		}
 		else if (a % 3 == 0 && a % 5 != 0)
 		{
 			printf("Fizz");
-			printf(" ");
 		}
 		else
 		{
 			printf("%d", a);
-			printf(" ");
 		}
+		if (a == 100)
+			continue;
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
