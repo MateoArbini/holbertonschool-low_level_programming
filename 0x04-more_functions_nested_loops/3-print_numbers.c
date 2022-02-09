@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  *print_numbers - imprime del 0 al 9 con salto
- *@x: random number
  **/
 void print_numbers(void)
 {
