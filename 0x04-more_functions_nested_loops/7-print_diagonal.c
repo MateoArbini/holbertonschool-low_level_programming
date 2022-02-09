@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *
- *
- *
+ *print_diagonal - imprime un triangulo
+ *@n: cantidad de \
+ *@a: contador de \
+ *@b: contador para sumar los lados
  **/
 void print_diagonal(int n)
 {
