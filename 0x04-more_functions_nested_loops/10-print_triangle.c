@@ -12,21 +12,21 @@ void print_triangle(int size)
 
 	for (c < size)
 	{
-		for (c = 0; c <= 10; c++)
+		for (c = 0; c <= size; c++)
 		{
 			if (c < (size - 1))
 			{
 				if (i != 0)
 				{
-					_putchar(" ");
+					_putchar(' ');
 				}
-				_putchar(" ");
+				_putchar(' ');
 			}
 			else
 			{
-				_putchar("#");
+				_putchar('#');
 			}
 		}
-		_putchar(" ");
 	}
+	_putchar(' ');
 }
