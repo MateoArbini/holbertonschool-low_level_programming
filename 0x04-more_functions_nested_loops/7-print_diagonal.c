@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ *print_diagonal - imprime triangulo
+ *@n: cantidad de caracteres para la figura
  **/
 
 void print_diagonal(int n);
