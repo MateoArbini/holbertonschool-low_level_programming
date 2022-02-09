@@ -2,7 +2,6 @@
 /**
  *print_numbers - imprime del 0 al 9 con salto de linea
  *@x: random number
- *Return: x
  **/
 void print_numbers(void)
 {
