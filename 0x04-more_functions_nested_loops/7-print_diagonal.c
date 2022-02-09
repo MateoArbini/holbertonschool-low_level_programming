@@ -1,14 +1,15 @@
 #include "main.h"
 /**
- *print_diagonal - imprime un triangulo
- *@n: cantidad de \
- *@a: contador de \
- *@b: contador para sumar los lados
- **/
+*print_diagonal - imprime un triangulo
+*@n: cantidad de \
+**/
 void print_diagonal(int n)
 {
 	int a;
 	int b;
+
+	if (n <= 0)
+		_putchar('\n');
 
 	for (a = 0; a < n; a++)
 	{
@@ -17,6 +18,4 @@ void print_diagonal(int n)
 		_putchar('\\');
 		_putchar('\n');
 	}
-	if (n <= 0)
-		_putchar('\n');
 }
