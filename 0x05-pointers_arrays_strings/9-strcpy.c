@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 	s = NULL;
 }
 
-void strcop(string &s1, string &s2)
+void strcop(string &s1, string s2)
 {
 	delete[] s1;
 	int largo = strlar(s2);
