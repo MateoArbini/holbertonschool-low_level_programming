@@ -13,8 +13,8 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-	i -= i;
-	iargo = 1;
+	i -= 1;
+	iargo = i;
 	for (b = 0; b <= largo / 2 ; b++, i--)
 	{
 		AUX = s[i];
