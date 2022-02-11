@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- *
- *
+ *reset_to_98 - cambia el valor del pointer n a 98
  *
  **/
 
