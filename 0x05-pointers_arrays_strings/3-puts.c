@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *_puts - imprime una string carcater por caracter
- *@*str - string a imprimir
- *@str - string a imprimir
+ *_puts - imprime una string carcater por caracterr
+ *@str: string a imprimir
  **/
 
 void _puts(char *str)
