@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *
+ *puts2 - imprime de dos en dos comienza en 0
  *
  **/
 
