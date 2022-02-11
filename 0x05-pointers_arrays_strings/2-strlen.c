@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *_strlen - largo del string
- *@*s: string
+ *_strlen - largo del string a contar
+ *@s: string
+ *Return: numero del largo del string
  **/
 
 int _strlen(char *s)
