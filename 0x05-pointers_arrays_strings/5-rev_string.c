@@ -14,7 +14,7 @@ void rev_string(char *s)
 		i++;
 	}
 	i -= 1;
-	iargo = i;
+	largo = i;
 	for (b = 0; b <= largo / 2 ; b++, i--)
 	{
 		AUX = s[i];
