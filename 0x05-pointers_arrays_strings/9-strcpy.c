@@ -18,7 +18,7 @@ void strcop(string &s1, string s2)
 	s1 = new char [largo + 1];
 	while (s2[i] != '\0')
 	{
-		s1[1] = s2[i];
+		s1[i] = s2[i];
 		i++;
 	}
 	s1[i] = '\0';
