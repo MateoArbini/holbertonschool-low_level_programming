@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ *_strlen - largo del string
+ *@*s: string
  **/
 
 int _strlen(char *s)
