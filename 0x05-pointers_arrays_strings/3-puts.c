@@ -2,7 +2,7 @@
 /**
  *_puts - imprime una string carcater por caracter
  *@*str - string a imprimir
- *
+ *@str - string a imprimir
  **/
 
 void _puts(char *str)
