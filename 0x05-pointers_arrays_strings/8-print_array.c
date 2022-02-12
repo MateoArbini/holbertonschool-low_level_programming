@@ -1,7 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *
- *
+ *print_array - print n elements of an array of int
+ *@a: pointer
+ *@n: variable n
  **/
 void print_array(int *a, int n)
 {
@@ -19,5 +21,5 @@ void print_array(int *a, int n)
 		}
 		i++;
 	}
-	printf('\n');
+	printf("\n");
 }
