@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ *leet - cambia algunas letras por numeros
+ *@c: string
  *
  **/
 char *leet(char *c)
