@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ *cap_string - despues de un separate point letra mayuscula
+ *@abc: string
+ *Return: abc string
  **/
 char *cap_string(char *abc)
 {
@@ -17,7 +18,7 @@ char *cap_string(char *abc)
 		{
 			if (abc[i + 1] >= 'a' && abc[i + 1] <= 'z')
 			{
-				abc[i + 1] = abc[i + 1] - 32;
+				abc[i + 1] = abc[i + 1] - 'a' + 'A';
 			}
 		}
 		i++;
