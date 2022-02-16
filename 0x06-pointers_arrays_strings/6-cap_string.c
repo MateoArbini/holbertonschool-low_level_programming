@@ -9,9 +9,16 @@ char *cap_string(char *abc)
 
 	while (abc[i] != '\0')
 	{
-		if (abc[i] == ' ')
+		if (abc[i] == ',' || abc[i] == ';' || abc[i] == '.'
+		|| abc[i] == '!' || abc[i] == '?' || abc[i] == '"'
+		|| abc[i] == '(' || abc[i] == ')' || abc[i] == '{'
+		|| abc[i] == '}' || abc[i] == '\t'
+		|| abc[i] == '\n' || abc[i] == ' ')
 		{
-			abc[i] = abc[i - 'a' + 'A'];
+			if (abc[i + 1] >= 'a' && abc[i + 1] <= 'z')
+			{
+				abc[i + 1] = abc[i + 1] - 32;
+			}
 		}
 		i++;
 	}
