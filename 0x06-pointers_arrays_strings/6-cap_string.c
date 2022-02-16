@@ -8,6 +8,9 @@ char *cap_string(char *abc)
 {
 	int i = 0;
 
+	if (abc[i] > 96 && abc[i] < 123)
+		abc[i] = abc[i] - 32;
+
 	while (abc[i] != '\0')
 	{
 		if (abc[i] == ',' || abc[i] == ';' || abc[i] == '.'
