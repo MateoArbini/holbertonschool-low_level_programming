@@ -2,7 +2,7 @@
 /**
  *leet - cambia algunas letras por numeros
  *@c: string
- *
+ *Return: string c
  **/
 char *leet(char *c)
 {
