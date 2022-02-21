@@ -3,7 +3,7 @@
 
 /**
  *print_diagsums - print the add of diagonal numbers of a matrix square
- *@*a: pointer
+ *@a: pointer
  *@size: var type int
  **/
 void print_diagsums(int *a, int size)
