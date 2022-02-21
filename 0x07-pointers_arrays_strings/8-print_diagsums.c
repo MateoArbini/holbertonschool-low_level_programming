@@ -1,7 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
  *print_diagsums - print the add of diagonal numbers of a matrix square
  *@a: pointer
