@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *_strpbrk - function that locates the first occurrance in the string 
+ *_strpbrk - locates the first occurrance in the string
  *s of any bytes in the string accept
  *@s: string
- *@accept: string to occurrance 
- *@Return: s
+ *@accept: string to occurrance
+ *Return: s
  *
  **/
 char *_strpbrk(char *s, char *accept)
@@ -23,4 +23,4 @@ char *_strpbrk(char *s, char *accept)
 		s++;
 	}
 	return (s);
-}				
+}
