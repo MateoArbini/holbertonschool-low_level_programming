@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 /**
  *main - multiplies the arguments
  *@argc: var type char. counter
