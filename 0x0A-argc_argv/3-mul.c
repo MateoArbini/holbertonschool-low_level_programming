@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *main - 
- *@argc:.
- *@argv:
- *Return: 0
+ *main - multiplies the arguments
+ *@argc: var type char. counter
+ *@argv: var type char, array of pointers that point to a string
+ *Return: 0 if there are not 2 var, otherwise 1
  **/
 int main(int argc, char *argv[])
 {
