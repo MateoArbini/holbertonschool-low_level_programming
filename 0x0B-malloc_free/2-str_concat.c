@@ -16,26 +16,26 @@ char *str_concat(char *s1, char *s2)
 	int a = 0;
 	int b = 0;
 
-	if (s1 == '\0')
+	if (s1 == NULL)
 	{
 		return (0);
 	}
-	if (s2 == '\0')
+	if (s2 == NULL)
 	{
 		return (0);
 	}
-	while (s1[largo1] != '\0')
+	while (s1[largo1] != NULL)
 	{
 		largo1++;
 	}
-	while (s2[largo2] != '\0')
+	while (s2[largo2] != NULL)
 	{
 		largo2++;
 	}
 
 	s3 = malloc(sizeof(char) * (largo1 + largo2));
 
-	if (s3 == '\0')
+	if (s3 == NULL)
 	{
 		return (0);
 	}
