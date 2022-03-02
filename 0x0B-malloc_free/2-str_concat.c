@@ -24,11 +24,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	while (s1[largo1] != NULL)
+	while (s1[largo1] != '\0')
 	{
 		largo1++;
 	}
-	while (s2[largo2] != NULL)
+	while (s2[largo2] != '\0')
 	{
 		largo2++;
 	}
