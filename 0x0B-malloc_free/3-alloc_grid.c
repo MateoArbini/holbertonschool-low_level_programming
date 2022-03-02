@@ -8,7 +8,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **grid;
-	int i = 0;
+	int a = 0;
 	int j = 0;
 
 	if (width <= 0 || height <= 0) /*valida input*/
@@ -19,18 +19,18 @@ int **alloc_grid(int width, int height)
 	if (grid == NULL) /* asigna la memoria */
 		return (NULL);
 
-	for (i = 0; i < height; i++)
+	for (a = 0; a < height; a++)
 	{
-		grid[i] = malloc(width * sizeof(int));
-		if (grid[i] == NULL) /*asigna memoria*/
+		grid[a] = malloc(width * sizeof(int));
+		if (grid[a] == NULL) /*asigna memoria*/
 		{
-			for (i = 0; i < height; i++)
-				free(grid[i]); /*aca libera i del grid*/
+			for (a = 0; a < height; a++)
+				free(grid[a]); /*aca libera a del grid*/
 			free(grid);/*aca elimina el grid*/
 			return (NULL);
 		}
 		for (j = 0; j < width; j++) /*setea los valores del array a 0*/
-			grid[i][j] = 0;
+			grid[a][j] = 0;
 	}
 	return (grid);
 }
