@@ -6,6 +6,7 @@
  *@s1: string
  *@s2: string
  *s3 = s1 y s2
+ *Return: s3
  **/
 char *str_concat(char *s1, char *s2)
 {
@@ -38,8 +39,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	
-	a = 0, b = 0;
 	while (a < largo1)
 	{
 		*(s3 + a) = *(s1 + a);
