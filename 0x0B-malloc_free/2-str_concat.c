@@ -2,8 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
+ *str_concat - function that concatenates two strings
+ *@s1: string
+ *@s2: string
+ *s3 = s1 y s2
  **/
 char *str_concat(char *s1, char *s2)
 {
