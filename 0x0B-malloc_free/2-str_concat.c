@@ -13,45 +13,30 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	int largo1 = 0;
 	int largo2 = 0;
-	int a = 0;
-	int b = 0;
+	int j = 0;
+	int i = 0;
 
-	if (s1 == NULL)
-	{
-		return ('\0');
-	}
-	if (s2 == NULL)
-	{
-		return ('\0');
-	}
-	if (s1 == NULL && s2 == NULL)
-	{
-		return ('\0');
-	}
-	while (s1[largo1] != '\0')
-	{
-		largo1++;
-	}
-	while (s2[largo2] != '\0')
-	{
-		largo2++;
-	}
+	if (s1 == NULL || s2 == NULL)
+		return (0);
+
+	while (*(s1 + i))
+		largo1++, i++;
+
+	while (*(s2 + j))
+		largo2++, j++;
+	
+	largo2++;
 
 	s3 = malloc(sizeof(char) * (largo1 + largo2));
 
 	if (s3 == NULL)
-	{
-		return (0);
-	}
-	while (a < largo1)
-	{
-		*(s3 + a) = *(s1 + a);
-		a++;
-	}
-	while (b < largo2)
-	{
-		*(s3 + a) = *(s2 + b);
-		a++, b++;
-	}
+		return (NULL);
+
+	for (i = 0; i < largo1; i++)
+		*(s3 + i) = *(s1 + i);
+	
+	for (j = 0; j < largo2; j++, i++)
+		*(s3 + i) = *(s2 + j);
+
 	return (s3);
 }
