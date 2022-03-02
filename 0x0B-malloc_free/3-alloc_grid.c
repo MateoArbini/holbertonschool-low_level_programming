@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *width - ancho del array
- *height - alto del array
- *@Return: grid
+ *alloc_grid - returns a pointer to a 2 dimensional array of integers
+ *@width: ancho del array
+ *@height: alto del array
+ *Return: grid
  **/
 int **alloc_grid(int width, int height)
 {
@@ -18,13 +19,6 @@ int **alloc_grid(int width, int height)
 	if (grid == NULL) /* asigna la memoria */
 		return (NULL);
 
-/**
- * Hasta aca, lo que hacemos es determinar si las medidas que te pasan a traves
- * de las variables son menores a 0, en ese caso el return que te debe de dar
- * es NULL, luego, lo que se hace es utilizar el comando malloc para el grid,
- * en donde el tamaño del grid va a ser igual a el sizeof de int * por el
- * height. Y luego se establece que si el grid es NULL, que retorne NULL.
- **/
 	for (i = 0; i < height; i++)
 	{
 		grid[i] = malloc(width * sizeof(int));
@@ -39,14 +33,4 @@ int **alloc_grid(int width, int height)
 			grid[i][j] = 0;
 	}
 	return (grid);
-/**
- * En el primer for, lo que se hace asignar el espacio en memoria por columnas
- * para cada fila. Luego con el grid, asigna el espacio en memoria para el
- * width con malloc. Luego con el for, establece que si i es menor al height,
- * aplique la funcoin free. Con ella, lo que se hace es liberar el contenido
- * [i] del grid, dejando al mismo vacio. Luego, utiliza el free para borrar
- * el grid en si mismo y que retorne NULL. Por utlimo, para el ultimo for, se
- * establece que los valores del array, arranquen desde 0, igualando i y j
- * igual a 0. Por ultimo, retorna grid.
- * **/
 }
