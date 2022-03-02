@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *free_grid - frees a 2 dimensional grid previously created by your 
+ *free_grid - frees a 2 dimensional grid previously created by your
  *alloc_grid function
  *@grid: previous function
  *@height: previous function
@@ -14,7 +14,7 @@ void free_grid(int **grid, int height)
 
 	if (grid == NULL)
 		free(grid);
-	
+
 	for (i = 0; i < height, i++)
 		free(grid[i]);
 
