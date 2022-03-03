@@ -13,7 +13,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *s3;
 	int i = 0;
 	int j = 0;
-	int num;
 	int largo2 = 0;
 	int largo1 = 0;
 
