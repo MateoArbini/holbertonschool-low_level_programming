@@ -15,6 +15,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int j = 0;
 	int num;
 	int largo2 = 0;
+	int largo1 = 0;
 
 	if (s1 == NULL)
 	{
@@ -24,13 +25,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
+	while (*(s1 + i))
+	{
+		largo1++, i++;
+	}
+	while (*(s2 + j))
+	{
+		largo2++, j++;
+	}
 	if (num < 0)
 	{
 		return (NULL);
 	}
-	else
+	if (num >= largo2
 	{
-		largo2++;
 
 	s3 = malloc(sizeof(char) * (largo1 + n + 1));
 
