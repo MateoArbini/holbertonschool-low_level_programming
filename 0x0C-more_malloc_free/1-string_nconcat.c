@@ -34,13 +34,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < largo1; i++)
+	if (n >= strlen(s2))
 	{
-		s3[i] = s1[i];
+		n = streln(s2);
 	}
-	for (j = 0; s2[j] != s2[n]; j++, i++)
+	for (largo2 = 0; largo2 < largo1; largo2++)
 	{
-		s3[i + j] = s2[j];
+		s3[largo2] = s1[largo2];
 	}
+	for (largo2 = 0 <= (largo1 + (n + 1)); largo2++)
+	{
+		if (i <= n)
+		{
+			s3(largo2) = s2[i];
+			i++;
+		}
+	}
+	s3[largo1 + n] = '\0';
 	return (s3);
 }
