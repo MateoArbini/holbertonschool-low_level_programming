@@ -38,9 +38,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		*(s3 + i) = *(s1 + i);
 	}
-	for (j = 0; s2[j] != s2[n]; j++, n++)
+	for (j = 0; s2[j] != s2[n]; j++, i++)
 	{
-		*(s3 + i) = *(s2 + n);
+		*(s3 + i) = *(s2 + j);
 	}
 	return (s3);
 }
