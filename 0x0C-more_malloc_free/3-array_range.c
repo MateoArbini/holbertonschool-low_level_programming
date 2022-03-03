@@ -10,7 +10,7 @@
  **/
 int *array_range(int min, int max)
 {
-	int dif = 0;
+	int dif;
 	int i = 0;
 	int *arr;
 
