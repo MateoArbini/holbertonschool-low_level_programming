@@ -32,14 +32,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= strlen(s2))
 		n = strlen(s2);
 
-	for (largo2 = 0; largo2 < largo1; largo2++)
+	for (; largo2 < largo1; largo2++)
 		s3[largo2] = s1[largo2];
 
-	for (largo2 = 0 <= (largo1 + (n + 1)); largo2++)
+	for (; largo2 <= (largo1 + (n + 1)); largo2++)
 	{
 		if (i <= n)
 		{
-			s3(largo2) = s2[i];
+			s3[largo2] = s2[i];
 			i++;
 		}
 	}
