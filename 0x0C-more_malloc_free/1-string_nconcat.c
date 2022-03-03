@@ -28,6 +28,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		largo1++, i++;
 	}
+	while (*(s2 + j))
+	{
+		largo2++, j++;
+	}
+	largo2++;
 	s3 = malloc(sizeof(char) * (largo1 + n) + 1);
 
 	if (s3 == NULL)
