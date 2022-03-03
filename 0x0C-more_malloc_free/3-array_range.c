@@ -28,7 +28,7 @@ int *array_range(int min, int max)
 	}
 	for (i = 0; i < dif; i++)
 	{
-		p[i] = min++;
+		arr[i] = min++;
 	}
 	return (arr);
 }
