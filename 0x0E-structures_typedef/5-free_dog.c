@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  *free_dog - function that frees dogs, related to ex 4
- *@d: pointer to dog_t
+ *@d: pointer to struct dog_t
  **/
 void free_dog(dog_t *d)
 {
