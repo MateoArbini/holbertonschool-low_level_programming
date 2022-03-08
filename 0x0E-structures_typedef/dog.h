@@ -12,14 +12,11 @@ struct dog
 	float age;
 	char *owner;
 };
+/**
+ *dog_t - typedef of struct dog, named dog_t whith the same variables
+ **/
+typedef struct dog dog_t;
 
-typedef struct dog dog;
-
-typedef struct dog
-{
-	char *name;
-	char *brand;
-} dog;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
