@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- *struct dog - strcture of dog, which contains name, age and owner
+ *struct dog - structure of dog, which contains name, age and owner
  *@name: var type char named "name"
  *@age: var type float named "age"
  *@owner: var type char named "owner"
