@@ -1,5 +1,3 @@
-#include "3-calc.h"
-#include <stdio.h>
 /**
  *op_add - addition
  *@a: number given
@@ -10,6 +8,7 @@ int op_add(int a, int b)
 {
 	return (a + b);
 }
+
 /**
  *op_sub - difference
  *@a: number given
@@ -20,6 +19,7 @@ int op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
  *op_mul - product
  *@a: number given
@@ -30,6 +30,7 @@ int op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
  *op_div - division
  *@a: number given
@@ -40,6 +41,7 @@ int op_div(int a, int b)
 {
 	return (a / b);
 }
+
 /**
  *op_mod - module
  *@a: number given
