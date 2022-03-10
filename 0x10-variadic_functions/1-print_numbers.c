@@ -23,16 +23,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s", separator);
 			}
-			else
-			{
-				putchar('\0');
-				putchar('\n');
-			}
 		}
 	}
 	else
 	{
 		return;
 	}
+	putchar('\n');
 	va_end(args);
 }
