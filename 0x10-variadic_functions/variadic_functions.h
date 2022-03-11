@@ -12,8 +12,8 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
- *vartype - struct
- *@tpye: type of the var
+ *struct vartype - struct
+ *@type: type of the var
  *@func: function
  **/
 typedef struct vartype
