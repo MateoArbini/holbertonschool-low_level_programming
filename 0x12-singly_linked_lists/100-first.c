@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  *myStartupFun - executes a function before main
  **/
