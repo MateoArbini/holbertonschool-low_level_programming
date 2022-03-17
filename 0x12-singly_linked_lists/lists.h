@@ -6,7 +6,12 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
-
+/**
+ *struct node - structure definition
+ *@str: string of each node
+ *@len: var which value is a number contained on each node
+ *@next: pointer to the next node
+ **/
 typedef struct node
 {
 	char *str;
