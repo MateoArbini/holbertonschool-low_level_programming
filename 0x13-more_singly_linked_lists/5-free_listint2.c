@@ -8,7 +8,7 @@ void free_listint2(listint_t **head)
 {
 	struct listint_s *aux, *aux2;
 
-	cnode = *head;
+	aux2 = *head;
 
 	while (cnode)
 	{
