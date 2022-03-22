@@ -6,15 +6,17 @@
  **/
 void free_listint2(listint_t **head)
 {
-	struct listint_s *aux, *aux2;
+	struct listint_s *aux;
 
-	aux2 = *head;
-
-	while (cnode)
+	if (head == NULL)
 	{
-		aux = aux2->next;
-		free(aux2);
-		aux2 = aux;
+		return;
 	}
-	*head = NULL;
+
+	while (*head != NULL)
+	{
+		aux = *head;
+		*head = aux->next;
+		free(aux);
+	}
 }
