@@ -8,16 +8,18 @@
  **/
 int pop_listint(listint_t **head)
 {
-	struct listint_s *aux = *head;
+	struct listint_s *aux;
 
-	int i = aux->n;
+	int i;
 
-	*head = aux->next;
-
-	if (head == NULL)
+	if (*head == NULL)
 	{
 		return (0);
 	}
+
+	aux = *head;
+	i = aux->n;
+	*head = aux->next;
 
 	free(aux);
 
