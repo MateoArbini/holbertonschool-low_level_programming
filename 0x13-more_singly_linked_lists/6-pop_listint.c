@@ -10,7 +10,7 @@ int pop_listint(listint_t **head)
 {
 	struct listint_s *aux;
 
-	int i;
+	int aux_n;
 
 	if (*head == NULL)
 	{
@@ -18,10 +18,10 @@ int pop_listint(listint_t **head)
 	}
 
 	aux = *head;
-	i = aux->n;
 	*head = aux->next;
+	aux_n = aux->n;
 
 	free(aux);
 
-	return (i);
+	return (aux_n);
 }
