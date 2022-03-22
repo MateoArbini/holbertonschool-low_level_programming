@@ -13,7 +13,7 @@
  **/
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *aux;
+	listint_t *aux = *head;
 	listint_t *newnode;
 
 	newnode = (struct listint_s *) malloc(sizeof(struct listint_s));
@@ -34,7 +34,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 	else
 	{
-		aux = *head;
 		while (aux->next != NULL)
 		{
 			aux = aux->next;
