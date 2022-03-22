@@ -10,6 +10,8 @@ int pop_listint(listint_t **head)
 {
 	struct listint_s *aux = *head;
 
+	int i = aux->n;
+	
 	*head = aux->next;
 
 	if (aux == NULL)
@@ -19,5 +21,5 @@ int pop_listint(listint_t **head)
 
 	free(aux);
 
-	return (aux->n);
+	return (i);
 }
