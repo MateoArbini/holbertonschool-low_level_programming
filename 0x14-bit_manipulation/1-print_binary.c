@@ -18,8 +18,7 @@ void rec(unsigned int n)
 
 /**
  *print_binary - function that prints the binary number
- *@c: alias of the list of parameters
- *Return: y, which is the counter of chars
+ *@n: alias of the list of parameters
  **/
 void print_binary(unsigned long int n)
 {
