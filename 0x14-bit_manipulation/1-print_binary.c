@@ -1,34 +1,13 @@
 #include "main.h"
+#include <math.h>
 /**
- *rec - function that gives you the binary number
+ *print_binary - function that gives you the binary number of a given n
  *@n: given number by the user
- **/
-void rec(unsigned int n)
-{
-	if (n / 2)
-	{
-		rec(n / 2);
-		_putchar(n % 2 + 48);
-	}
-	else
-	{
-		_putchar(n % 2 + 48);
-	}
-}
-
-/**
- *print_binary - function that prints the binary number
- *@n: alias of the list of parameters
  **/
 void print_binary(unsigned long int n)
 {
-	unsigned long int x;
-	int y;
+	if (n > 1)
 
-	rec(n);
-
-	for (y = 0; x / 2; y++)
-	{
-		x /= 2;
-	}
+	print_binary(n >> 1);
+	_putchar((n & 1) + 48);
 }
