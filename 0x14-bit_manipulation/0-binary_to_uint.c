@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 
 	length = strlen(b);
 
-	if (b == NULL || *b == '\0')
+	if (b == NULL)
 	{
 		return (0);
 	}
@@ -40,5 +40,10 @@ unsigned int binary_to_uint(const char *b)
 		x *= 2;
 		}
 	}
+	else
+	{
+		return (0);
+	}
+
 	return (converted);
 }
