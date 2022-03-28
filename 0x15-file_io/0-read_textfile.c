@@ -23,15 +23,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	/* READ */
 	if (fd == -1)
 	{
 		close(fd);
 		free(buffer);
 		return (0);
 	}
-	cont = read(fd, buffer, letters);
-	/* WRITE */
+	cont = read(0, buffer, letters);
+
 	validator = write(0, buffer, letters);
 	if (validator == 0)
 	{
