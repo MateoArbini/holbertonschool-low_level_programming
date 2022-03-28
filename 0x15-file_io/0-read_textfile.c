@@ -8,11 +8,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd = open(filename, O_RDONLY, 400);
-
 	char *buffer = malloc(sizeof(char *) * letters);
-
 	ssize_t cont = 0;
-        size_t validator = 0;
+	size_t validator = 0;
 
 	if (filename == NULL)
 	{
@@ -20,7 +18,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-
 	if (buffer == NULL)
 	{
 		close(fd);
@@ -33,23 +30,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-
 	cont = read(fd, buffer, letters);
 	/* WRITE */
 	validator = write(0, buffer, letters);
-
 	if (validator == 0)
 	{
 		close(fd);
 		free(buffer);
 		return (0);
 	}
-
 	if (validator != letters)
 	{
 		close(fd);
 		free(buffer);
-		return(0);
+		return (0);
 	}
 	close(fd);
 	return (cont);
