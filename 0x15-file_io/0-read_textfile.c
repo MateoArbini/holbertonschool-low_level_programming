@@ -15,22 +15,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 	{
-		return (0);
-		free(buffer);
 		close(fd);
+		free(buffer);
+		return (0);
 	}
 
 	if (buffer == NULL)
 	{
-		return (0);
 		close(fd);
+		return (0);
 	}
 	/* READ */
 	if (fd == -1)
 	{
-		return (0);
-		free(buffer);
 		close(fd);
+		free(buffer);
+		return (0);
 	}
 
 	cont = read(fd, buffer, letters);
@@ -39,9 +39,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (validator == 0)
 	{
-		return (0);
-		free(buffer);
 		close(fd);
+		free(buffer);
+		return (0);
 	}
 	close(fd);
 	return (cont);
