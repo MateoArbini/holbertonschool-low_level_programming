@@ -30,6 +30,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
+	if (cont < )
+	{
+		return (0);
+	}		
 	validator = write(0, buffer, letters);
 	if (validator == 0)
 	{
@@ -44,5 +48,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	close(fd);
+	free(fd);
 	return (cont);
 }
