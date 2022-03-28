@@ -12,11 +12,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int cont = 0, validator = 0;
 
 	if (filename == NULL)
-	{
-		close(fd);
-		free(buffer);
 		return (0);
-	}
+
 	if (buffer == NULL)
 	{
 		close(fd);
@@ -35,11 +32,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-	validator = write(0, buffer, letters);
-	if (validator == 0)
+	validator = write(STDOUT_FILENO, buffer, cont);
+	if (validator == -1)
 	{
 		close(fd);
 		free(buffer);
+		return (validator);
+	}
+	if (validator != cont)
+	{
 		return (0);
 	}
 	close(fd);
