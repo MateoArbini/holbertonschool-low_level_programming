@@ -24,6 +24,8 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 buffer = malloc(sizeof(char *) * 1024);
 if (buffer == NULL)
 	return (0);
+while (read_length > 0)
+{
 read_length = read(fd_filefrom, buffer, 1024);
 if (read_length == -1)
 {
@@ -37,6 +39,8 @@ if (write_validator == -1)
 free(buffer);
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 }
+}
+free(buffer);
 close1_validator = close(fd_filefrom);
 if (close1_validator == -1)
 dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n"), exit(100);
