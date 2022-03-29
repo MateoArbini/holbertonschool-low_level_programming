@@ -33,11 +33,13 @@ free(buffer);
 dprintf(STDERR_FILENO, "Error: Can't read from file\n"), exit(98);
 }
 if (read_length > 0)
+{
 	write_validator = write(fd_fileto, buffer, read_length);
 if (write_validator == -1)
 {
 free(buffer);
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+}
 }
 }
 free(buffer);
