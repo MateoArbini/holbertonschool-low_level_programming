@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *main - fklsndf
- *@argc: kfjf
- *@argv: psofsd
+ *main - function that copies a file into another
+ *@argc: argument counter
+ *@argv: argument value
  *Return: 0
  **/
 int main(int argc, char *argv[])
