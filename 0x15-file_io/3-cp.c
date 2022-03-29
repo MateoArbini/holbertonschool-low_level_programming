@@ -18,7 +18,7 @@ if (fd_filefrom == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 }
-fd_fileto = open(argv[2], O_CREAT | O_RDONLY | O_WRONLY | O_TRUNC, 0664);
+fd_fileto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 if (fd_fileto == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 buffer = malloc(sizeof(char *) * 1024);
@@ -43,8 +43,6 @@ dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n"), exit(100);
 close2_validator = close(fd_fileto);
 if (close2_validator == -1)
 dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n"), exit(100);
-close(fd_filefrom);
-close(fd_fileto);
 return (0);
 }
 
