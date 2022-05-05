@@ -3,7 +3,7 @@
  *delete_dnodeint_at_index - function that delets a node at certain position
  *@head: pointer that points to the header
  *@index: index
- *Return 1 or -1
+ *Return: 1 or -1
  **/
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
