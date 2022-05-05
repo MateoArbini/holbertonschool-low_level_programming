@@ -9,39 +9,44 @@
  **/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
+	dlistint_t *new_node;
 	dlistint_t *aux = *h;
-	dlistint_t *newnode;
-	unsigned int size = 0;
+	unsigned int iter = 0;
 
-	newnode = malloc(sizeof(dlistint_t));
-
-	if (h == NULL || newnode == NULL)
-	{
-		free(newnode);
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
 		return (NULL);
-	}
-	newnode->n = n;
-	newnode->next = NULL;
-	newnode->prev = NULL;
+	new_node->n = n;
+	new_node->prev = NULL;
+	new_node->next = NULL;
 	if (idx == 0)
 	{
-		newnode->next = *h;
-		*h = newnode;
-		return (newnode);
-	}
-	while (size < (idx - 1))
-	{
-		aux = aux->next;
-		size++;
-		if (aux == NULL)
+		if (h == NULL || *h == NULL)
 		{
-			free(newnode);
-			return (NULL);
+			*h = new_node;
+			return (new_node);
 		}
+		new_node->next = *h;
+		(*h)->prev = new_node;
+		*h = new_node;
+		return (new_node);
 	}
-	newnode->next = aux->next;
-	newnode->next->prev = newnode;
-	aux->next = newnode;
-	newnode->prev = aux;
-	return (newnode);
-}
+	while (iter < idx - 1)
+	{
+		if (aux->next  == NULL)
+			return (NULL);
+		aux = aux->next;
+		iter++;
+	}
+	if (aux->next == NULL)
+	{
+		aux->next = new_node;
+		new_node->prev = aux;
+		return (new_node);
+	}
+	new_node->next = aux->next;
+	aux->next->prev = new_node;
+	new_node->prev = aux;
+	aux->next = new_node;
+	return (new_node);
+}	
