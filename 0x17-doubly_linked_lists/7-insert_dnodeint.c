@@ -23,13 +23,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	else
 		return (NULL);
-
 	if (h == NULL)
 	{
 		free(newnode);
 		return (NULL);
 	}
-
 	if (idx == 0)
 	{
 		newnode->next = *h;
@@ -40,7 +38,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		aux = aux->next;
 		size++;
-
 		if (aux == NULL)
 		{
 			free(newnode);
