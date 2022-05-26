@@ -3,9 +3,9 @@
 #include <string.h>
 #include <stdio.h>
 /**
- *
- *
- *
+ *hash_table_create - function that creates a hash table
+ *@size: size of the array
+ *Return: new hash
  **/
 hash_table_t *hash_table_create(unsigned long int size)
 {
