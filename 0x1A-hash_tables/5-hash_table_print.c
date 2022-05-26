@@ -20,9 +20,9 @@ void hash_table_print(const hash_table_t *ht)
 	while (index < ht->size)
 	{
 		node = ht->array[index];
-		while(node != NULL)
+		while (node != NULL)
 		{
-			printf("%s'%s': '%s'",coma, node->key, node->value);
+			printf("%s'%s': '%s'", coma, node->key, node->value);
 			coma = ", ";
 			node = node->next;
 		}
