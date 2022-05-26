@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
-/*
+/**
  *key_index - function that returns the index of a key
  *@key: key
  *@size: size of the array of the hash table
