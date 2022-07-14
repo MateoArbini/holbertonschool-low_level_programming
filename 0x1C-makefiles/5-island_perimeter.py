@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''task 5'''
 
+
 def island_perimeter(grid):
     row_num = len(grid)
     if row_num == 0 or len(grid[0]) == 0:
